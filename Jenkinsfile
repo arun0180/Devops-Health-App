@@ -6,7 +6,8 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/arun0180/Devops-Health-App.git'
+                git branch: 'main',
+                url: 'https://github.com/arun0180/Devops-Health-App.git'
             }
         }
 
