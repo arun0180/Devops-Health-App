@@ -1,0 +1,21 @@
+{
+  "name": "devops-health-app",
+  "version": "1.0.0",
+  "description": "Healthcare Appointment Management System using DevOps",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "devops",
+    "docker",
+    "jenkins",
+    "healthcare"
+  ],
+  "author": "Arun",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
