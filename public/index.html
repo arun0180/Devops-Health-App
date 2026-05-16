@@ -1,21 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthcare Appointment System</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-    <h1>Healthcare Appointment Management System</h1>
+    <header>
+        <h1>
+            <i class="fa-solid fa-hospital"></i>
+            Healthcare Appointment Management System
+        </h1>
+    </header>
 
-    <input type="text" id="patientName"
-           placeholder="Enter Patient Name">
+    <div class="container">
 
-    <button onclick="bookAppointment()">
-        Book Appointment
-    </button>
+        <div class="card">
 
-    <ul id="appointments"></ul>
+            <h2>Book Appointment</h2>
+
+            <input type="text"
+                id="patientName"
+                placeholder="Enter Patient Name">
+
+            <select id="doctorName">
+
+                <option value="">Select Doctor</option>
+
+                <option>Dr. Smith - Cardiologist</option>
+
+                <option>Dr. Kumar - Neurologist</option>
+
+                <option>Dr. Priya - Dermatologist</option>
+
+            </select>
+
+            <button onclick="bookAppointment()">
+                <i class="fa-solid fa-calendar-check"></i>
+                Book Appointment
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Booked Appointments</h2>
+
+            <ul id="appointments"></ul>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Healthcare DevOps System | Git • Jenkins • Docker
+    </footer>
 
     <script src="script.js"></script>
 
